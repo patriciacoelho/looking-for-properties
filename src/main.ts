@@ -6,6 +6,11 @@ import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
 
+if (import.meta.env.DEV) {
+  const { worker } = await import('./mocks/browser')
+  await worker.start()
+}
+
 const app = createApp(App)
 
 app.use(createPinia())

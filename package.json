@@ -17,6 +17,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "axios": "^1.11.0",
     "pinia": "^3.0.3",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
@@ -37,6 +39,7 @@
     "eslint-plugin-vue": "~10.3.0",
     "jiti": "^2.4.2",
     "jsdom": "^26.1.0",
+    "msw": "^2.10.4",
     "npm-run-all2": "^8.0.4",
     "postcss": "^8.5.6",
     "prettier": "3.6.2",
@@ -46,5 +49,10 @@
     "vite-plugin-vue-devtools": "^8.0.0",
     "vitest": "^3.2.4",
     "vue-tsc": "^3.0.4"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
